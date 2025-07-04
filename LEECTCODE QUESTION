@@ -1,0 +1,46 @@
+--Create table If Not Exists Person (personId int, firstName varchar(255), lastName varchar(255))
+	
+	CREATE TABLE PERSON(
+		PERSONID INT,
+		FIRSTNAME VARCHAR(255),
+		LASTNAME VARCHAR(255),
+	);
+	SELECT * FROM PERSON;
+
+
+
+--Create table If Not Exists Address (addressId int, personId int, city varchar(255), state varchar(255))
+
+	CREATE TABLE ADDRESS(
+		ADDRESSID INT,
+		PERSONID INT,
+		CITY VARCHAR(255),
+		STATE VARCHAR(255)
+	);
+	SELECT * FROM ADDRESS;
+--Truncate table Person
+
+	TRUNCATE TABLE PERSON;
+
+--insert into Person (personId, lastName, firstName) values ('1', 'Wang', 'Allen')
+
+	INSERT INTO PERSON VALUES(1,'WANG','ALLEN')
+	SELECT * FROM PERSON;
+--insert into Person (personId, lastName, firstName) values ('2', 'Alice', 'Bob')
+	
+	INSERT INTO PERSON VALUES(2,'ALICE','BOB')
+	SELECT * FROM PERSON;
+
+--Truncate table Address
+	
+	TRUNCATE TABLE ADDRESS;
+--insert into Address (addressId, personId, city, state) values ('1', '2', 'New York City', 'New York')
+
+	INSERT INTO ADDRESS VALUES (1,2,'New York City','New York')
+	SELECT * FROM ADDRESS;
+
+--insert into Address (addressId, personId, city, state) values ('2', '3', 'Leetcode', 'California')
+
+	INSERT INTO ADDRESS VALUES(2,3,'LEETCODE','CALIFORNIA')
+	SELECT * FROM ADDRESS;
+ 
